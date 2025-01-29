@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04303e;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #014E56;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    background-color: white;
+    color: black;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+   
+    padding: 8px 16px;
+    border-radius: 60px;
+    border: white 2px solid;
+}
+
+.about, .directors, .clients, .cta {
+    padding: 60px 20px;
+   background-color: #014E56;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+
+    
+
+}
+
+.about h1 {
+    font-size: 36px;
+}
+
+.about p {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.directors  {
+    text-align: center;
+    background-color: #004047;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #012F34;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.card img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: #ff6f61;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.clients  {
+    text-align: center;
+    background-color: #012F34;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  
+}
+
+.cta {
+    background-color: #ff6f61;
+    color: #012F34;
+    font-size: 48px;
+}
+
+.cta .btn {
+border: black 2px solid;   
+color: #012F34; 
+text-decoration: none;
+font-size: 20px;
+
+}
+
+
+footer {
+    background-color: #022b36;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about p {
+        max-width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
